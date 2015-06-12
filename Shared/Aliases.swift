@@ -1,3 +1,3 @@
-import QuartzCore
+import CoreGraphics
 
 public typealias DrawingBlock = CGContext? -> Void
