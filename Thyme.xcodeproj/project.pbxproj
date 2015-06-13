@@ -47,6 +47,7 @@
 		00A163A01B2C218D0018710D /* Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A1639F1B2C218D0018710D /* Drawing.swift */; };
 		00A163A21B2C22130018710D /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A163A11B2C22130018710D /* Units.swift */; };
 		00A163A31B2C22130018710D /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A163A11B2C22130018710D /* Units.swift */; };
+		00A163A51B2C23F40018710D /* UIBezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A163A41B2C23F40018710D /* UIBezierPath.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +125,7 @@
 		00A1639D1B2C20B10018710D /* Drawing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drawing.swift; sourceTree = "<group>"; };
 		00A1639F1B2C218D0018710D /* Drawing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drawing.swift; sourceTree = "<group>"; };
 		00A163A11B2C22130018710D /* Units.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Units.swift; sourceTree = "<group>"; };
+		00A163A41B2C23F40018710D /* UIBezierPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBezierPath.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +194,7 @@
 		00A162D71B2A69140018710D /* Thyme */ = {
 			isa = PBXGroup;
 			children = (
+				00A163A41B2C23F40018710D /* UIBezierPath.swift */,
 				00A1639D1B2C20B10018710D /* Drawing.swift */,
 				00A162D81B2A69140018710D /* Supporting Files */,
 			);
@@ -484,6 +487,7 @@
 				00A163151B2B30DE0018710D /* CGContext.swift in Sources */,
 				00A163891B2BE5090018710D /* Path.swift in Sources */,
 				00A163861B2BE0490018710D /* CGMutablePath.swift in Sources */,
+				00A163A51B2C23F40018710D /* UIBezierPath.swift in Sources */,
 				00A163951B2C1A9B0018710D /* CGRect.swift in Sources */,
 				00A1638C1B2C113E0018710D /* Direction.swift in Sources */,
 			);
