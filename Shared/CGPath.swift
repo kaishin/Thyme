@@ -1,22 +1,18 @@
 import CoreGraphics
 
 public extension CGPath {
-  public var mutablePath: CGMutablePathRef {
+  /// Returns a mutable copy of the path.
+  ///
+  /// :returns: A new, mutable, copy of the path.
+  public var mutablePath: CGMutablePath {
     return CGPathCreateMutableCopy(self)
   }
 
+  /// Returns the current point in the path.
+  ///
+  /// :returns: The current point in the path.
   public var currentPoint: CGPoint {
     return CGPathGetCurrentPoint(self)
   }
-
-  public static func startPathAtPoint(point: CGPoint) -> CGPath {
-    let mutablePath = CGPathCreateMutable()
-    CGPathMoveToPoint(mutablePath, nil, point.x, point.y)
-    return CGPathCreateCopy(mutablePath)
-  }
-
-  public func close() -> CGPathRef {
-    CGPathCloseSubpath(mutablePath)
-    return CGPathCreateCopy(mutablePath)
-  }
 }
+

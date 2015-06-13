@@ -29,6 +29,10 @@
 		00A1637E1B2B408E0018710D /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 00A163771B2B3ED50018710D /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		00A1637F1B2B409C0018710D /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 00A163761B2B3ED50018710D /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		00A163811B2B4E4C0018710D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A163191B2B31210018710D /* CoreGraphics.framework */; };
+		00A163831B2BDE770018710D /* PathHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A163821B2BDE770018710D /* PathHelpers.swift */; };
+		00A163841B2BDE770018710D /* PathHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A163821B2BDE770018710D /* PathHelpers.swift */; };
+		00A163861B2BE0490018710D /* CGMutablePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A163851B2BE0490018710D /* CGMutablePath.swift */; };
+		00A163871B2BE0490018710D /* CGMutablePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A163851B2BE0490018710D /* CGMutablePath.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +99,8 @@
 		00A163731B2B3EC80018710D /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = SOURCE_ROOT; };
 		00A163761B2B3ED50018710D /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = SOURCE_ROOT; };
 		00A163771B2B3ED50018710D /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = SOURCE_ROOT; };
+		00A163821B2BDE770018710D /* PathHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathHelpers.swift; sourceTree = "<group>"; };
+		00A163851B2BE0490018710D /* CGMutablePath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGMutablePath.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,6 +246,8 @@
 				00A163101B2B30DE0018710D /* Aliases.swift */,
 				00A163111B2B30DE0018710D /* CGContext.swift */,
 				00A163121B2B30DE0018710D /* CGPath.swift */,
+				00A163851B2BE0490018710D /* CGMutablePath.swift */,
+				00A163821B2BDE770018710D /* PathHelpers.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -419,8 +427,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00A163831B2BDE770018710D /* PathHelpers.swift in Sources */,
 				00A163131B2B30DE0018710D /* Aliases.swift in Sources */,
 				00A163151B2B30DE0018710D /* CGContext.swift in Sources */,
+				00A163861B2BE0490018710D /* CGMutablePath.swift in Sources */,
 				00A163171B2B30DE0018710D /* CGPath.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,8 +447,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00A163841B2BDE770018710D /* PathHelpers.swift in Sources */,
 				00A163141B2B30DE0018710D /* Aliases.swift in Sources */,
 				00A163161B2B30DE0018710D /* CGContext.swift in Sources */,
+				00A163871B2BE0490018710D /* CGMutablePath.swift in Sources */,
 				00A163181B2B30DE0018710D /* CGPath.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
