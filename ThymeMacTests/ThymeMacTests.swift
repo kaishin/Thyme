@@ -1,6 +1,7 @@
 import Quick
 import Nimble
 import Thyme
+import AppKit
 
 class UIImageExtensionSpec: QuickSpec {
   override func spec() {
