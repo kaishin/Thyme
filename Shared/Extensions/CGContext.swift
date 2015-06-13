@@ -105,10 +105,30 @@ public extension CGContext {
   /// Rotates the context by a given angle around a pivot point.
   ///
   /// :param: pivot A pivot point in the user space coordinates around which the context will rotate.
-  /// :param: angle The angle, in radians, by which to rotate the coordinate space of the context.
-  public func rotate(#pivot: CGPoint, angle: Float) {
+  /// :param: angle The angle, in degrees, by which to rotate the coordinate space of the context.
+  public func rotate(#pivot: CGPoint, angle: Double) {
     CGContextTranslateCTM(self, pivot.x, pivot.y);
-    CGContextRotateCTM(self, CGFloat(angle));
+    CGContextRotateCTM(self, CGFloat(degreesToRadians(angle)));
     CGContextTranslateCTM(self, -pivot.x, -pivot.y);
+  }
+
+  /// Executes a drawing code block in the context.
+  ///
+  /// :param: drawingBlock The drawing block to execute in the context.
+  public func draw(drawingBlock: DrawingBlock) {
+    CGContextSaveGState(self)
+    drawingBlock(self)
+    CGContextRestoreGState(self)
+  }
+
+  /// Rotates the context by a given angle around a pivot point, then executes a drawing block.
+  ///
+  /// :param: pivot A pivot point in the user space coordinates around which the context will rotate.
+  /// :param: angle The angle, in degrees, by which to rotate the coordinate space of the context.
+  /// :param: drawingBlock The drawing block to execute in the context.
+  public func rotateThenDraw(#pivot: CGPoint, angle: Double, drawingBlock: DrawingBlock) {
+    self.rotate(pivot: pivot, angle: angle)
+    self.draw(drawingBlock)
+    self.rotate(pivot: pivot, angle: -angle)
   }
 }
