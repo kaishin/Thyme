@@ -39,4 +39,13 @@ public extension NSBezierPath {
     points.dealloc(3)
     return path
   }
+
+  /// Fills a path with a given color.
+  ///
+  /// :param: color The color to use for filling the path.
+  func fill(#color: NSColor) {
+    color.setFill()
+    self.fill()
+    NSColor.clearColor().setFill()
+  }
 }
