@@ -194,7 +194,7 @@
 		00A162D71B2A69140018710D /* Thyme */ = {
 			isa = PBXGroup;
 			children = (
-				00A163A41B2C23F40018710D /* UIBezierPath.swift */,
+				00A163A71B2C24A10018710D /* Extensions */,
 				00A1639D1B2C20B10018710D /* Drawing.swift */,
 				00A162D81B2A69140018710D /* Supporting Files */,
 			);
@@ -299,6 +299,14 @@
 			children = (
 				00A1639A1B2C1C570018710D /* NSBezierPath.swift */,
 				00A163981B2C1BED0018710D /* NSGraphicsContext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		00A163A71B2C24A10018710D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				00A163A41B2C23F40018710D /* UIBezierPath.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
