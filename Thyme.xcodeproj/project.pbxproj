@@ -37,6 +37,8 @@
 		00A1638D1B2C113E0018710D /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A1638B1B2C113E0018710D /* Direction.swift */; };
 		00A1638F1B2C17060018710D /* PlatformHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A1638E1B2C17060018710D /* PlatformHelper.swift */; };
 		00A163901B2C17060018710D /* PlatformHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A1638E1B2C17060018710D /* PlatformHelper.swift */; };
+		00A163921B2C1A270018710D /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A163911B2C1A270018710D /* Operators.swift */; };
+		00A163931B2C1A270018710D /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A163911B2C1A270018710D /* Operators.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +109,7 @@
 		00A163881B2BE5090018710D /* Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
 		00A1638B1B2C113E0018710D /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
 		00A1638E1B2C17060018710D /* PlatformHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatformHelper.swift; sourceTree = "<group>"; };
+		00A163911B2C1A270018710D /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,6 +259,7 @@
 				00A163881B2BE5090018710D /* Path.swift */,
 				00A1638B1B2C113E0018710D /* Direction.swift */,
 				00A1638E1B2C17060018710D /* PlatformHelper.swift */,
+				00A163911B2C1A270018710D /* Operators.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -436,6 +440,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00A163831B2BDE770018710D /* PathHelpers.swift in Sources */,
+				00A163921B2C1A270018710D /* Operators.swift in Sources */,
 				00A163131B2B30DE0018710D /* Aliases.swift in Sources */,
 				00A1638F1B2C17060018710D /* PlatformHelper.swift in Sources */,
 				00A163151B2B30DE0018710D /* CGContext.swift in Sources */,
@@ -458,6 +463,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00A163841B2BDE770018710D /* PathHelpers.swift in Sources */,
+				00A163931B2C1A270018710D /* Operators.swift in Sources */,
 				00A163141B2B30DE0018710D /* Aliases.swift in Sources */,
 				00A163901B2C17060018710D /* PlatformHelper.swift in Sources */,
 				00A163161B2B30DE0018710D /* CGContext.swift in Sources */,
