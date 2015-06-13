@@ -19,4 +19,13 @@ extension CGMutablePath {
   func moveToPoint(point: CGPoint) {
     CGPathMoveToPoint(self, nil, point.x, point.y)
   }
+
+  /// Appends a curve to the mutable path.
+  ///
+  /// :param: firstControlPoint The first control point of the curve.
+  /// :param: secondControlPoint The second control point of the curve.
+  /// :param: endPoint The end point of the curve.
+  func addCurveTovePoint(firstControlPoint pointOne: CGPoint, secondControlPoint pointTwo: CGPoint, endPoint: CGPoint) {
+    CGPathAddCurveToPoint(self, nil, pointOne.x, pointOne.y, pointTwo.x, pointTwo.y, endPoint.x, endPoint.y)
+  }
 }

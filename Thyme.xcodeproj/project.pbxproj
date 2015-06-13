@@ -41,6 +41,8 @@
 		00A163931B2C1A270018710D /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A163911B2C1A270018710D /* Operators.swift */; };
 		00A163951B2C1A9B0018710D /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A163941B2C1A9B0018710D /* CGRect.swift */; };
 		00A163961B2C1A9B0018710D /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A163941B2C1A9B0018710D /* CGRect.swift */; };
+		00A163991B2C1BED0018710D /* NSGraphicsContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A163981B2C1BED0018710D /* NSGraphicsContext.swift */; };
+		00A1639B1B2C1C570018710D /* NSBezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A1639A1B2C1C570018710D /* NSBezierPath.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +115,8 @@
 		00A1638E1B2C17060018710D /* PlatformHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatformHelper.swift; sourceTree = "<group>"; };
 		00A163911B2C1A270018710D /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 		00A163941B2C1A9B0018710D /* CGRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; };
+		00A163981B2C1BED0018710D /* NSGraphicsContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSGraphicsContext.swift; sourceTree = "<group>"; };
+		00A1639A1B2C1C570018710D /* NSBezierPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSBezierPath.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +222,7 @@
 		00A162F71B2A6AFE0018710D /* ThymeMac */ = {
 			isa = PBXGroup;
 			children = (
+				00A1639C1B2C1ED10018710D /* Extensions */,
 				00A162F81B2A6AFE0018710D /* Supporting Files */,
 			);
 			path = ThymeMac;
@@ -272,6 +277,15 @@
 				00A163111B2B30DE0018710D /* CGContext.swift */,
 				00A163851B2BE0490018710D /* CGMutablePath.swift */,
 				00A163941B2C1A9B0018710D /* CGRect.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		00A1639C1B2C1ED10018710D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				00A1639A1B2C1C570018710D /* NSBezierPath.swift */,
+				00A163981B2C1BED0018710D /* NSGraphicsContext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -478,9 +492,11 @@
 				00A163841B2BDE770018710D /* PathHelpers.swift in Sources */,
 				00A163931B2C1A270018710D /* Operators.swift in Sources */,
 				00A163141B2B30DE0018710D /* Aliases.swift in Sources */,
+				00A163991B2C1BED0018710D /* NSGraphicsContext.swift in Sources */,
 				00A163901B2C17060018710D /* PlatformHelper.swift in Sources */,
 				00A163161B2B30DE0018710D /* CGContext.swift in Sources */,
 				00A1638A1B2BE5090018710D /* Path.swift in Sources */,
+				00A1639B1B2C1C570018710D /* NSBezierPath.swift in Sources */,
 				00A163871B2BE0490018710D /* CGMutablePath.swift in Sources */,
 				00A163961B2C1A9B0018710D /* CGRect.swift in Sources */,
 				00A1638D1B2C113E0018710D /* Direction.swift in Sources */,
