@@ -14,13 +14,13 @@ public struct Path {
   /// A list of path actions.
   public let actions: [PathAction]
 
-  /// Initializes a path with a point a list of actions.
+  /// Instantiates a path with a point a list of actions.
   public init(point: CGPoint, pathActions: [PathAction]) {
     currentPoint = point
     actions = pathActions
   }
 
-  /// Initializes a path with a point.
+  /// Instantiates a path with a point.
   public init(point: CGPoint) {
     currentPoint = point
     actions = [.move(point)]
