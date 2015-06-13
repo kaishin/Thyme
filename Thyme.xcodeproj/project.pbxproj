@@ -206,7 +206,7 @@
 			children = (
 				00A162DA1B2A69140018710D /* Thyme.h */,
 				00A162D91B2A69140018710D /* Info.plist */,
-				00A163191B2B31210018710D /* CoreGraphics.framework */,
+				00A1631B1B2B31340018710D /* CoreGraphics.framework */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -245,7 +245,7 @@
 			children = (
 				00A162FA1B2A6AFE0018710D /* ThymeMac.h */,
 				00A162F91B2A6AFE0018710D /* Info.plist */,
-				00A1631B1B2B31340018710D /* CoreGraphics.framework */,
+				00A163191B2B31210018710D /* CoreGraphics.framework */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
