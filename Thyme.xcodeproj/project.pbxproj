@@ -17,8 +17,6 @@
 		00A163141B2B30DE0018710D /* Aliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A163101B2B30DE0018710D /* Aliases.swift */; };
 		00A163151B2B30DE0018710D /* CGContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A163111B2B30DE0018710D /* CGContext.swift */; };
 		00A163161B2B30DE0018710D /* CGContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A163111B2B30DE0018710D /* CGContext.swift */; };
-		00A163171B2B30DE0018710D /* CGPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A163121B2B30DE0018710D /* CGPath.swift */; };
-		00A163181B2B30DE0018710D /* CGPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A163121B2B30DE0018710D /* CGPath.swift */; };
 		00A1631C1B2B31340018710D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A1631B1B2B31340018710D /* CoreGraphics.framework */; };
 		00A163741B2B3EC80018710D /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A163721B2B3EC80018710D /* Nimble.framework */; };
 		00A163751B2B3EC80018710D /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A163731B2B3EC80018710D /* Quick.framework */; };
@@ -33,6 +31,12 @@
 		00A163841B2BDE770018710D /* PathHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A163821B2BDE770018710D /* PathHelpers.swift */; };
 		00A163861B2BE0490018710D /* CGMutablePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A163851B2BE0490018710D /* CGMutablePath.swift */; };
 		00A163871B2BE0490018710D /* CGMutablePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A163851B2BE0490018710D /* CGMutablePath.swift */; };
+		00A163891B2BE5090018710D /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A163881B2BE5090018710D /* Path.swift */; };
+		00A1638A1B2BE5090018710D /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A163881B2BE5090018710D /* Path.swift */; };
+		00A1638C1B2C113E0018710D /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A1638B1B2C113E0018710D /* Direction.swift */; };
+		00A1638D1B2C113E0018710D /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A1638B1B2C113E0018710D /* Direction.swift */; };
+		00A1638F1B2C17060018710D /* PlatformHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A1638E1B2C17060018710D /* PlatformHelper.swift */; };
+		00A163901B2C17060018710D /* PlatformHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A1638E1B2C17060018710D /* PlatformHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,7 +96,6 @@
 		00A163071B2A6AFE0018710D /* ThymeMacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThymeMacTests.swift; sourceTree = "<group>"; };
 		00A163101B2B30DE0018710D /* Aliases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aliases.swift; sourceTree = "<group>"; };
 		00A163111B2B30DE0018710D /* CGContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGContext.swift; sourceTree = "<group>"; };
-		00A163121B2B30DE0018710D /* CGPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPath.swift; sourceTree = "<group>"; };
 		00A163191B2B31210018710D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		00A1631B1B2B31340018710D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		00A163721B2B3EC80018710D /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = SOURCE_ROOT; };
@@ -101,6 +104,9 @@
 		00A163771B2B3ED50018710D /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = SOURCE_ROOT; };
 		00A163821B2BDE770018710D /* PathHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathHelpers.swift; sourceTree = "<group>"; };
 		00A163851B2BE0490018710D /* CGMutablePath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGMutablePath.swift; sourceTree = "<group>"; };
+		00A163881B2BE5090018710D /* Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
+		00A1638B1B2C113E0018710D /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
+		00A1638E1B2C17060018710D /* PlatformHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatformHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,9 +251,11 @@
 			children = (
 				00A163101B2B30DE0018710D /* Aliases.swift */,
 				00A163111B2B30DE0018710D /* CGContext.swift */,
-				00A163121B2B30DE0018710D /* CGPath.swift */,
 				00A163851B2BE0490018710D /* CGMutablePath.swift */,
 				00A163821B2BDE770018710D /* PathHelpers.swift */,
+				00A163881B2BE5090018710D /* Path.swift */,
+				00A1638B1B2C113E0018710D /* Direction.swift */,
+				00A1638E1B2C17060018710D /* PlatformHelper.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -429,9 +437,11 @@
 			files = (
 				00A163831B2BDE770018710D /* PathHelpers.swift in Sources */,
 				00A163131B2B30DE0018710D /* Aliases.swift in Sources */,
+				00A1638F1B2C17060018710D /* PlatformHelper.swift in Sources */,
 				00A163151B2B30DE0018710D /* CGContext.swift in Sources */,
+				00A163891B2BE5090018710D /* Path.swift in Sources */,
 				00A163861B2BE0490018710D /* CGMutablePath.swift in Sources */,
-				00A163171B2B30DE0018710D /* CGPath.swift in Sources */,
+				00A1638C1B2C113E0018710D /* Direction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,9 +459,11 @@
 			files = (
 				00A163841B2BDE770018710D /* PathHelpers.swift in Sources */,
 				00A163141B2B30DE0018710D /* Aliases.swift in Sources */,
+				00A163901B2C17060018710D /* PlatformHelper.swift in Sources */,
 				00A163161B2B30DE0018710D /* CGContext.swift in Sources */,
+				00A1638A1B2BE5090018710D /* Path.swift in Sources */,
 				00A163871B2BE0490018710D /* CGMutablePath.swift in Sources */,
-				00A163181B2B30DE0018710D /* CGPath.swift in Sources */,
+				00A1638D1B2C113E0018710D /* Direction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
