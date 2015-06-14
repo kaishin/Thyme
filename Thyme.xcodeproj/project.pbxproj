@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		00A162DB1B2A69140018710D /* Thyme.h in Headers */ = {isa = PBXBuildFile; fileRef = 00A162DA1B2A69140018710D /* Thyme.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00A162E11B2A69150018710D /* Thyme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A162D51B2A69140018710D /* Thyme.framework */; };
-		00A162E81B2A69150018710D /* ThymeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A162E71B2A69150018710D /* ThymeTests.swift */; };
+		00A162E81B2A69150018710D /* PathSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A162E71B2A69150018710D /* PathSpec.swift */; };
 		00A162FB1B2A6AFE0018710D /* ThymeMac.h in Headers */ = {isa = PBXBuildFile; fileRef = 00A162FA1B2A6AFE0018710D /* ThymeMac.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00A163011B2A6AFE0018710D /* Thyme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A162F61B2A6AFE0018710D /* Thyme.framework */; };
-		00A163081B2A6AFE0018710D /* ThymeMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A163071B2A6AFE0018710D /* ThymeMacTests.swift */; };
+		00A163081B2A6AFE0018710D /* PathSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A163071B2A6AFE0018710D /* PathSpec.swift */; };
 		00A163131B2B30DE0018710D /* Aliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A163101B2B30DE0018710D /* Aliases.swift */; };
 		00A163141B2B30DE0018710D /* Aliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A163101B2B30DE0018710D /* Aliases.swift */; };
 		00A163151B2B30DE0018710D /* CGContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A163111B2B30DE0018710D /* CGContext.swift */; };
@@ -98,13 +98,13 @@
 		00A162DA1B2A69140018710D /* Thyme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Thyme.h; sourceTree = "<group>"; };
 		00A162E01B2A69140018710D /* ThymeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThymeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00A162E61B2A69150018710D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00A162E71B2A69150018710D /* ThymeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThymeTests.swift; sourceTree = "<group>"; };
+		00A162E71B2A69150018710D /* PathSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathSpec.swift; sourceTree = "<group>"; };
 		00A162F61B2A6AFE0018710D /* Thyme.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Thyme.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		00A162F91B2A6AFE0018710D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00A162FA1B2A6AFE0018710D /* ThymeMac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThymeMac.h; sourceTree = "<group>"; };
 		00A163001B2A6AFE0018710D /* ThymeMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThymeMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00A163061B2A6AFE0018710D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00A163071B2A6AFE0018710D /* ThymeMacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThymeMacTests.swift; sourceTree = "<group>"; };
+		00A163071B2A6AFE0018710D /* PathSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathSpec.swift; sourceTree = "<group>"; };
 		00A163101B2B30DE0018710D /* Aliases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aliases.swift; sourceTree = "<group>"; };
 		00A163111B2B30DE0018710D /* CGContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGContext.swift; sourceTree = "<group>"; };
 		00A163191B2B31210018710D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
@@ -214,7 +214,7 @@
 		00A162E41B2A69150018710D /* ThymeTests */ = {
 			isa = PBXGroup;
 			children = (
-				00A162E71B2A69150018710D /* ThymeTests.swift */,
+				00A162E71B2A69150018710D /* PathSpec.swift */,
 				00A162E51B2A69150018710D /* Supporting Files */,
 			);
 			path = ThymeTests;
@@ -253,7 +253,7 @@
 		00A163041B2A6AFE0018710D /* ThymeMacTests */ = {
 			isa = PBXGroup;
 			children = (
-				00A163071B2A6AFE0018710D /* ThymeMacTests.swift */,
+				00A163071B2A6AFE0018710D /* PathSpec.swift */,
 				00A163051B2A6AFE0018710D /* Supporting Files */,
 			);
 			path = ThymeMacTests;
@@ -505,7 +505,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00A162E81B2A69150018710D /* ThymeTests.swift in Sources */,
+				00A162E81B2A69150018710D /* PathSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,7 +533,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00A163081B2A6AFE0018710D /* ThymeMacTests.swift in Sources */,
+				00A163081B2A6AFE0018710D /* PathSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
