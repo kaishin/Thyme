@@ -32,10 +32,9 @@ public extension NSBezierPath {
         path.close()
         didClosePath = true
       }
-
-      if !didClosePath { path.close() }
     }
 
+    if !didClosePath { path.close() }
     points.dealloc(3)
     return path
   }
