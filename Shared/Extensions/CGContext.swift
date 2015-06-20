@@ -112,6 +112,18 @@ public extension CGContext {
     CGContextTranslateCTM(self, -pivot.x, -pivot.y);
   }
 
+  /// Rotates the context clockwise, regardless of the platform, by a given angle around a pivot point.
+  ///
+  /// :param: pivot A pivot point in the user space coordinates around which the context will rotate.
+  /// :param: angle The angle, in degrees, by which to rotate the coordinate space of the context. Positive values will rotate the context clockwise.
+  public func rotateClockwise(#pivot: CGPoint, angle: Double) {
+    executeOn(iOS: {
+      self.rotate(pivot: pivot, angle: angle)
+    }, mac: {
+      self.rotate(pivot: pivot, angle: -angle)
+    })
+  }
+
   /// Executes a drawing code block in the context.
   ///
   /// :param: drawingBlock The drawing block to execute in the context.
