@@ -132,15 +132,4 @@ public extension CGContext {
     drawingBlock(self)
     CGContextRestoreGState(self)
   }
-
-  /// Rotates the context by a given angle around a pivot point, then executes a drawing block.
-  ///
-  /// :param: pivot A pivot point in the user space coordinates around which the context will rotate.
-  /// :param: angle The angle, in degrees, by which to rotate the coordinate space of the context.
-  /// :param: drawingBlock The drawing block to execute in the context.
-  public func rotateThenDraw(#pivot: CGPoint, angle: Double, drawingBlock: DrawingBlock) {
-    self.rotate(pivot: pivot, angle: angle)
-    self.draw(drawingBlock)
-    self.rotate(pivot: pivot, angle: -angle)
-  }
 }
