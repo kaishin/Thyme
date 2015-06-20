@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0090DA9F1B35862F00D724B4 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0090DA9E1B35862F00D724B4 /* CustomView.swift */; };
+		0090DAA11B358D0A00D724B4 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0090DAA01B358D0A00D724B4 /* CustomView.swift */; };
+		00A114A11B349CC1001E4E70 /* Thyme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A114A01B349CC1001E4E70 /* Thyme.framework */; };
 		00A1632C1B2B3AC90018710D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A1632B1B2B3AC90018710D /* AppDelegate.swift */; };
 		00A1632E1B2B3AC90018710D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A1632D1B2B3AC90018710D /* ViewController.swift */; };
 		00A163311B2B3AC90018710D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A1632F1B2B3AC90018710D /* Main.storyboard */; };
@@ -17,10 +20,12 @@
 		00A163581B2B3BEE0018710D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00A163571B2B3BEE0018710D /* Images.xcassets */; };
 		00A1635B1B2B3BEE0018710D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A163591B2B3BEE0018710D /* Main.storyboard */; };
 		00A1636F1B2B3C110018710D /* Thyme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A1636E1B2B3C110018710D /* Thyme.framework */; };
-		00A163711B2B3C270018710D /* ThymeMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A163701B2B3C270018710D /* ThymeMac.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0090DA9E1B35862F00D724B4 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		0090DAA01B358D0A00D724B4 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		00A114A01B349CC1001E4E70 /* Thyme.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Thyme.framework; path = ../../build/Debug/Thyme.framework; sourceTree = "<group>"; };
 		00A163261B2B3AC90018710D /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00A1632A1B2B3AC90018710D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00A1632B1B2B3AC90018710D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -35,7 +40,6 @@
 		00A163571B2B3BEE0018710D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		00A1635A1B2B3BEE0018710D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		00A1636E1B2B3C110018710D /* Thyme.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Thyme.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Thyme-bwvunncfnmimdohjurpndvefznfa/Build/Products/Debug-iphoneos/Thyme.framework"; sourceTree = "<group>"; };
-		00A163701B2B3C270018710D /* ThymeMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ThymeMac.framework; path = ../../build/Debug/ThymeMac.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00A163711B2B3C270018710D /* ThymeMac.framework in Frameworks */,
+				00A114A11B349CC1001E4E70 /* Thyme.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,9 +85,7 @@
 			children = (
 				00A1632B1B2B3AC90018710D /* AppDelegate.swift */,
 				00A1632D1B2B3AC90018710D /* ViewController.swift */,
-				00A1632F1B2B3AC90018710D /* Main.storyboard */,
-				00A163321B2B3AC90018710D /* Images.xcassets */,
-				00A163341B2B3AC90018710D /* LaunchScreen.xib */,
+				0090DA9E1B35862F00D724B4 /* CustomView.swift */,
 				00A163291B2B3AC90018710D /* Supporting Files */,
 			);
 			path = Demo;
@@ -92,6 +94,9 @@
 		00A163291B2B3AC90018710D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				00A1632F1B2B3AC90018710D /* Main.storyboard */,
+				00A163321B2B3AC90018710D /* Images.xcassets */,
+				00A163341B2B3AC90018710D /* LaunchScreen.xib */,
 				00A1636E1B2B3C110018710D /* Thyme.framework */,
 				00A1632A1B2B3AC90018710D /* Info.plist */,
 			);
@@ -103,8 +108,7 @@
 			children = (
 				00A163531B2B3BEE0018710D /* AppDelegate.swift */,
 				00A163551B2B3BEE0018710D /* ViewController.swift */,
-				00A163571B2B3BEE0018710D /* Images.xcassets */,
-				00A163591B2B3BEE0018710D /* Main.storyboard */,
+				0090DAA01B358D0A00D724B4 /* CustomView.swift */,
 				00A163511B2B3BEE0018710D /* Supporting Files */,
 			);
 			path = DemoMac;
@@ -113,7 +117,9 @@
 		00A163511B2B3BEE0018710D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				00A163701B2B3C270018710D /* ThymeMac.framework */,
+				00A163571B2B3BEE0018710D /* Images.xcassets */,
+				00A163591B2B3BEE0018710D /* Main.storyboard */,
+				00A114A01B349CC1001E4E70 /* Thyme.framework */,
 				00A163521B2B3BEE0018710D /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -219,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0090DA9F1B35862F00D724B4 /* CustomView.swift in Sources */,
 				00A1632E1B2B3AC90018710D /* ViewController.swift in Sources */,
 				00A1632C1B2B3AC90018710D /* AppDelegate.swift in Sources */,
 			);
@@ -228,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0090DAA11B358D0A00D724B4 /* CustomView.swift in Sources */,
 				00A163561B2B3BEE0018710D /* ViewController.swift in Sources */,
 				00A163541B2B3BEE0018710D /* AppDelegate.swift in Sources */,
 			);
@@ -350,12 +358,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Thyme-bwvunncfnmimdohjurpndvefznfa/Build/Products/Debug-iphoneos",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Demo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -364,12 +369,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Thyme-bwvunncfnmimdohjurpndvefznfa/Build/Products/Debug-iphoneos",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Demo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -381,16 +383,13 @@
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/kaishin/Developer/Thyme/build/Debug,
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = DemoMac/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -403,12 +402,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/kaishin/Developer/Thyme/build/Debug,
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = DemoMac/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -443,6 +439,7 @@
 				00A163691B2B3BEE0018710D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
