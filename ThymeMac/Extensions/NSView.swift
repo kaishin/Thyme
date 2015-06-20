@@ -3,7 +3,7 @@ import AppKit
 extension NSView {
   public var center: CGPoint {
     get {
-      return CGPointMake(CGRectGetMidX(frame), CGRectGetMidY(frame))
+      return CGPoint(x: NSMidX(bounds), y: NSMidY(bounds))
     }
   }
 }
