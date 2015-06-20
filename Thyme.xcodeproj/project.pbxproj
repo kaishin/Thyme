@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0090DAA31B358DA300D724B4 /* NSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0090DAA21B358DA300D724B4 /* NSView.swift */; };
+		0090DAA51B358E8E00D724B4 /* NSViewSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0090DAA41B358E8E00D724B4 /* NSViewSpec.swift */; };
 		00A162DB1B2A69140018710D /* Thyme.h in Headers */ = {isa = PBXBuildFile; fileRef = 00A162DA1B2A69140018710D /* Thyme.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00A162E11B2A69150018710D /* Thyme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A162D51B2A69140018710D /* Thyme.framework */; };
 		00A162E81B2A69150018710D /* PathSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A162E71B2A69150018710D /* PathSpec.swift */; };
@@ -93,6 +95,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0090DAA21B358DA300D724B4 /* NSView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSView.swift; sourceTree = "<group>"; };
+		0090DAA41B358E8E00D724B4 /* NSViewSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSViewSpec.swift; sourceTree = "<group>"; };
 		00A162D51B2A69140018710D /* Thyme.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Thyme.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		00A162D91B2A69140018710D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00A162DA1B2A69140018710D /* Thyme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Thyme.h; sourceTree = "<group>"; };
@@ -194,8 +198,8 @@
 		00A162D71B2A69140018710D /* Thyme */ = {
 			isa = PBXGroup;
 			children = (
-				00A163A71B2C24A10018710D /* Extensions */,
 				00A1639D1B2C20B10018710D /* Drawing.swift */,
+				00A163A71B2C24A10018710D /* Extensions */,
 				00A162D81B2A69140018710D /* Supporting Files */,
 			);
 			path = Thyme;
@@ -254,6 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				00A163071B2A6AFE0018710D /* PathSpec.swift */,
+				0090DAA41B358E8E00D724B4 /* NSViewSpec.swift */,
 				00A163051B2A6AFE0018710D /* Supporting Files */,
 			);
 			path = ThymeMacTests;
@@ -299,6 +304,7 @@
 			children = (
 				00A1639A1B2C1C570018710D /* NSBezierPath.swift */,
 				00A163981B2C1BED0018710D /* NSGraphicsContext.swift */,
+				0090DAA21B358DA300D724B4 /* NSView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -520,6 +526,7 @@
 				00A163991B2C1BED0018710D /* NSGraphicsContext.swift in Sources */,
 				00A163901B2C17060018710D /* PlatformHelper.swift in Sources */,
 				00A163161B2B30DE0018710D /* CGContext.swift in Sources */,
+				0090DAA31B358DA300D724B4 /* NSView.swift in Sources */,
 				00A1638A1B2BE5090018710D /* Path.swift in Sources */,
 				00A1639B1B2C1C570018710D /* NSBezierPath.swift in Sources */,
 				00A163A01B2C218D0018710D /* Drawing.swift in Sources */,
@@ -533,6 +540,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0090DAA51B358E8E00D724B4 /* NSViewSpec.swift in Sources */,
 				00A163081B2A6AFE0018710D /* PathSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
