@@ -26,7 +26,7 @@ public extension NSBezierPath {
         path.addLineToPoint(points[0])
         didClosePath = false
       case .CurveToBezierPathElement:
-        path.addCurveTovePoint(firstControlPoint: points[0], secondControlPoint: points[1], endPoint: points[2])
+        path.addCurveToPoint(firstControlPoint: points[0], secondControlPoint: points[1], endPoint: points[2])
         didClosePath = false
       case .ClosePathBezierPathElement:
         path.close()
