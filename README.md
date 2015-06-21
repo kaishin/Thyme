@@ -27,4 +27,4 @@ Coming soon...
 
 ### License
 
-Copyright 2013-2015 Reda Lemeden. BSD Licence. See LICENSE file for more info.
+Copyright 2015 Reda Lemeden. BSD Licence. See LICENSE file for more info.
