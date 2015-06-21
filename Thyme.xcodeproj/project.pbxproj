@@ -50,6 +50,8 @@
 		00A163A21B2C22130018710D /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A163A11B2C22130018710D /* Units.swift */; };
 		00A163A31B2C22130018710D /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A163A11B2C22130018710D /* Units.swift */; };
 		00A163A51B2C23F40018710D /* UIBezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A163A41B2C23F40018710D /* UIBezierPath.swift */; };
+		00F1442A1B36F2F300375EDD /* CGRectExtensionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F144291B36F2F300375EDD /* CGRectExtensionSpec.swift */; };
+		00F1442C1B36F65000375EDD /* CGRectExtensionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F1442B1B36F65000375EDD /* CGRectExtensionSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +132,8 @@
 		00A1639F1B2C218D0018710D /* Drawing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drawing.swift; sourceTree = "<group>"; };
 		00A163A11B2C22130018710D /* Units.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Units.swift; sourceTree = "<group>"; };
 		00A163A41B2C23F40018710D /* UIBezierPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBezierPath.swift; sourceTree = "<group>"; };
+		00F144291B36F2F300375EDD /* CGRectExtensionSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRectExtensionSpec.swift; sourceTree = "<group>"; };
+		00F1442B1B36F65000375EDD /* CGRectExtensionSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRectExtensionSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				00A162E71B2A69150018710D /* PathSpec.swift */,
+				00F144291B36F2F300375EDD /* CGRectExtensionSpec.swift */,
 				00A162E51B2A69150018710D /* Supporting Files */,
 			);
 			path = ThymeTests;
@@ -260,6 +265,7 @@
 				00A163071B2A6AFE0018710D /* PathSpec.swift */,
 				0090DAA41B358E8E00D724B4 /* NSViewSpec.swift */,
 				00A163051B2A6AFE0018710D /* Supporting Files */,
+				00F1442B1B36F65000375EDD /* CGRectExtensionSpec.swift */,
 			);
 			path = ThymeMacTests;
 			sourceTree = "<group>";
@@ -511,6 +517,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00F1442A1B36F2F300375EDD /* CGRectExtensionSpec.swift in Sources */,
 				00A162E81B2A69150018710D /* PathSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -541,6 +548,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0090DAA51B358E8E00D724B4 /* NSViewSpec.swift in Sources */,
+				00F1442C1B36F65000375EDD /* CGRectExtensionSpec.swift in Sources */,
 				00A163081B2A6AFE0018710D /* PathSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
