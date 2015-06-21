@@ -673,10 +673,10 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="1PU-Mj-18Y" customClass="CustomView" customModule="DemoMac" customModuleProvider="target">
-                                <rect key="frame" x="90" y="50" width="300" height="300"/>
+                                <rect key="frame" x="140" y="100" width="200" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="98F-4C-Lc5"/>
-                                    <constraint firstAttribute="height" constant="300" id="Bta-Li-Rtd"/>
+                                    <constraint firstAttribute="width" constant="200" id="98F-4C-Lc5"/>
+                                    <constraint firstAttribute="height" constant="200" id="Bta-Li-Rtd"/>
                                 </constraints>
                             </customView>
                         </subviews>

@@ -20,6 +20,8 @@
 		00A163581B2B3BEE0018710D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00A163571B2B3BEE0018710D /* Images.xcassets */; };
 		00A1635B1B2B3BEE0018710D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A163591B2B3BEE0018710D /* Main.storyboard */; };
 		00A1636F1B2B3C110018710D /* Thyme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A1636E1B2B3C110018710D /* Thyme.framework */; };
+		00F144271B36EB9700375EDD /* Draw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F144261B36EB9700375EDD /* Draw.swift */; };
+		00F144281B36EB9700375EDD /* Draw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F144261B36EB9700375EDD /* Draw.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,7 @@
 		00A163571B2B3BEE0018710D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		00A1635A1B2B3BEE0018710D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		00A1636E1B2B3C110018710D /* Thyme.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Thyme.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Thyme-bwvunncfnmimdohjurpndvefznfa/Build/Products/Debug-iphoneos/Thyme.framework"; sourceTree = "<group>"; };
+		00F144261B36EB9700375EDD /* Draw.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Draw.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,7 @@
 		00A1631D1B2B3AC90018710D = {
 			isa = PBXGroup;
 			children = (
+				00F144261B36EB9700375EDD /* Draw.swift */,
 				00A163281B2B3AC90018710D /* Demo */,
 				00A163501B2B3BEE0018710D /* DemoMac */,
 				00A163271B2B3AC90018710D /* Products */,
@@ -228,6 +232,7 @@
 				0090DA9F1B35862F00D724B4 /* CustomView.swift in Sources */,
 				00A1632E1B2B3AC90018710D /* ViewController.swift in Sources */,
 				00A1632C1B2B3AC90018710D /* AppDelegate.swift in Sources */,
+				00F144271B36EB9700375EDD /* Draw.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +243,7 @@
 				0090DAA11B358D0A00D724B4 /* CustomView.swift in Sources */,
 				00A163561B2B3BEE0018710D /* ViewController.swift in Sources */,
 				00A163541B2B3BEE0018710D /* AppDelegate.swift in Sources */,
+				00F144281B36EB9700375EDD /* Draw.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

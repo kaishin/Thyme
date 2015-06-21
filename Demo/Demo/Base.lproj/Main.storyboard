@@ -17,11 +17,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7II-1Z-zeJ" customClass="CustomView" customModule="Demo" customModuleProvider="target">
-                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <rect key="frame" x="200" y="200" width="200" height="200"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="Pxw-KT-I62"/>
-                                    <constraint firstAttribute="height" constant="300" id="Wxe-wt-yVG"/>
+                                    <constraint firstAttribute="width" constant="200" id="Pxw-KT-I62"/>
+                                    <constraint firstAttribute="height" constant="200" id="Wxe-wt-yVG"/>
                                 </constraints>
                             </view>
                         </subviews>
