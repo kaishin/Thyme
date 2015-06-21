@@ -81,9 +81,14 @@ public extension CGContext {
     CGContextAddPath(self, path)
   }
 
-  /// Paints a line along the current path.
+  /// Paints a line along the current path, then clears it.
   public func strokePath() -> () {
     CGContextStrokePath(self)
+  }
+
+  /// Paints the area within the current path, then clears it.
+  public func fillPath() -> () {
+    CGContextFillPath(self)
   }
 
   /// Paints the area contained within the provided rectangle, using the fill color of the context.
