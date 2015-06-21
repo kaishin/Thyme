@@ -81,28 +81,6 @@ public func concat(lhp: Path)(rhp: Path) -> Path {
   return lhp + rhp
 }
 
-public extension Path {
-  /// A computed CGPath property created from the path.
-  var CGPath: CGPathRef {
-    get {
-      var mutablePath = CGPathCreateMutable()
-
-      for action in actions {
-        switch action {
-        case .move(let point):
-          mutablePath.moveToPoint(point)
-        case .addLine(let point):
-          mutablePath.addLineToPoint(point)
-        case .close():
-          mutablePath.close()
-        }
-      }
-
-      return mutablePath
-    }
-  }
-}
-
 /// Appends a path action to an existing action array.
 ///
 /// :param: actions The original action array.

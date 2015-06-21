@@ -52,6 +52,12 @@
 		00A163A51B2C23F40018710D /* UIBezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A163A41B2C23F40018710D /* UIBezierPath.swift */; };
 		00F1442A1B36F2F300375EDD /* CGRectExtensionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F144291B36F2F300375EDD /* CGRectExtensionSpec.swift */; };
 		00F1442C1B36F65000375EDD /* CGRectExtensionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F1442B1B36F65000375EDD /* CGRectExtensionSpec.swift */; };
+		00F1442E1B37060200375EDD /* CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F1442D1B37060200375EDD /* CGPoint.swift */; };
+		00F1442F1B37060200375EDD /* CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F1442D1B37060200375EDD /* CGPoint.swift */; };
+		00F144351B3731E700375EDD /* PathAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F144321B37317800375EDD /* PathAction.swift */; };
+		00F144361B3731E800375EDD /* PathAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F144321B37317800375EDD /* PathAction.swift */; };
+		00F144381B3733DA00375EDD /* PathExtensionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F144371B3733DA00375EDD /* PathExtensionSpec.swift */; };
+		00F1443B1B373B2600375EDD /* PathExtensionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F1443A1B373B2600375EDD /* PathExtensionSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,6 +140,10 @@
 		00A163A41B2C23F40018710D /* UIBezierPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBezierPath.swift; sourceTree = "<group>"; };
 		00F144291B36F2F300375EDD /* CGRectExtensionSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRectExtensionSpec.swift; sourceTree = "<group>"; };
 		00F1442B1B36F65000375EDD /* CGRectExtensionSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRectExtensionSpec.swift; sourceTree = "<group>"; };
+		00F1442D1B37060200375EDD /* CGPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPoint.swift; sourceTree = "<group>"; };
+		00F144321B37317800375EDD /* PathAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathAction.swift; sourceTree = "<group>"; };
+		00F144371B3733DA00375EDD /* PathExtensionSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathExtensionSpec.swift; sourceTree = "<group>"; };
+		00F1443A1B373B2600375EDD /* PathExtensionSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathExtensionSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				00A162E71B2A69150018710D /* PathSpec.swift */,
+				00F144371B3733DA00375EDD /* PathExtensionSpec.swift */,
 				00F144291B36F2F300375EDD /* CGRectExtensionSpec.swift */,
 				00A162E51B2A69150018710D /* Supporting Files */,
 			);
@@ -263,9 +274,10 @@
 			isa = PBXGroup;
 			children = (
 				00A163071B2A6AFE0018710D /* PathSpec.swift */,
+				00F1443A1B373B2600375EDD /* PathExtensionSpec.swift */,
 				0090DAA41B358E8E00D724B4 /* NSViewSpec.swift */,
-				00A163051B2A6AFE0018710D /* Supporting Files */,
 				00F1442B1B36F65000375EDD /* CGRectExtensionSpec.swift */,
+				00A163051B2A6AFE0018710D /* Supporting Files */,
 			);
 			path = ThymeMacTests;
 			sourceTree = "<group>";
@@ -287,6 +299,7 @@
 				00A163101B2B30DE0018710D /* Aliases.swift */,
 				00A163821B2BDE770018710D /* PathHelpers.swift */,
 				00A163881B2BE5090018710D /* Path.swift */,
+				00F144321B37317800375EDD /* PathAction.swift */,
 				00A1638B1B2C113E0018710D /* Direction.swift */,
 				00A1638E1B2C17060018710D /* PlatformHelper.swift */,
 				00A163911B2C1A270018710D /* Operators.swift */,
@@ -301,6 +314,7 @@
 				00A163111B2B30DE0018710D /* CGContext.swift */,
 				00A163851B2BE0490018710D /* CGMutablePath.swift */,
 				00A163941B2C1A9B0018710D /* CGRect.swift */,
+				00F1442D1B37060200375EDD /* CGPoint.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -505,10 +519,12 @@
 				00A1638F1B2C17060018710D /* PlatformHelper.swift in Sources */,
 				00A1639E1B2C20B10018710D /* Drawing.swift in Sources */,
 				00A163151B2B30DE0018710D /* CGContext.swift in Sources */,
+				00F1442E1B37060200375EDD /* CGPoint.swift in Sources */,
 				00A163891B2BE5090018710D /* Path.swift in Sources */,
 				00A163861B2BE0490018710D /* CGMutablePath.swift in Sources */,
 				00A163A51B2C23F40018710D /* UIBezierPath.swift in Sources */,
 				00A163951B2C1A9B0018710D /* CGRect.swift in Sources */,
+				00F144361B3731E800375EDD /* PathAction.swift in Sources */,
 				00A1638C1B2C113E0018710D /* Direction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -519,6 +535,7 @@
 			files = (
 				00F1442A1B36F2F300375EDD /* CGRectExtensionSpec.swift in Sources */,
 				00A162E81B2A69150018710D /* PathSpec.swift in Sources */,
+				00F144381B3733DA00375EDD /* PathExtensionSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,6 +549,7 @@
 				00A163141B2B30DE0018710D /* Aliases.swift in Sources */,
 				00A163991B2C1BED0018710D /* NSGraphicsContext.swift in Sources */,
 				00A163901B2C17060018710D /* PlatformHelper.swift in Sources */,
+				00F144351B3731E700375EDD /* PathAction.swift in Sources */,
 				00A163161B2B30DE0018710D /* CGContext.swift in Sources */,
 				0090DAA31B358DA300D724B4 /* NSView.swift in Sources */,
 				00A1638A1B2BE5090018710D /* Path.swift in Sources */,
@@ -539,6 +557,7 @@
 				00A163A01B2C218D0018710D /* Drawing.swift in Sources */,
 				00A163871B2BE0490018710D /* CGMutablePath.swift in Sources */,
 				00A163961B2C1A9B0018710D /* CGRect.swift in Sources */,
+				00F1442F1B37060200375EDD /* CGPoint.swift in Sources */,
 				00A1638D1B2C113E0018710D /* Direction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -547,6 +566,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00F1443B1B373B2600375EDD /* PathExtensionSpec.swift in Sources */,
 				0090DAA51B358E8E00D724B4 /* NSViewSpec.swift in Sources */,
 				00F1442C1B36F65000375EDD /* CGRectExtensionSpec.swift in Sources */,
 				00A163081B2A6AFE0018710D /* PathSpec.swift in Sources */,
