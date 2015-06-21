@@ -7,7 +7,7 @@ import CoreGraphics
 ///
 /// :returns: A new path moved to the given point.
 public func moveTo(point: CGPoint)(path: Path) -> Path {
-  return Path(point: point, pathActions: appendAction(path.actions, .move(point)))
+  return Path(point: point, pathActions: appendAction(path.actions, .Move(point)))
 }
 
 /// Returns a new path after adding a line to a given point in an existing path.
@@ -17,7 +17,7 @@ public func moveTo(point: CGPoint)(path: Path) -> Path {
 ///
 /// :returns: A new path with a new line added to it.
 public func addLineTo(point: CGPoint)(path: Path) -> Path {
-  return Path(point: point, pathActions: appendAction(path.actions, .addLine(point)))
+  return Path(point: point, pathActions: appendAction(path.actions, .AddLine(point)))
 }
 
 /// Returns a new path after closing an existing path.
@@ -26,7 +26,7 @@ public func addLineTo(point: CGPoint)(path: Path) -> Path {
 ///
 /// :returns: A new closed path.
 public func close(path: Path) -> Path {
-  return Path(point: path.currentPoint, pathActions: appendAction(path.actions, .close))
+  return Path(point: path.currentPoint, pathActions: appendAction(path.actions, .Close))
 }
 
 /// Returns a new path after adding a line towards a given platform-agnostic direction in an existing path.
@@ -61,7 +61,7 @@ public func addLineTowards(directions: [Direction: Float])(path: Path) -> Path {
     }
   }
 
-  actions.append(.addLine(destinationPoint))
+  actions.append(.AddLine(destinationPoint))
   return Path(point: destinationPoint, pathActions: actions)
 }
 

@@ -16,7 +16,7 @@ public struct Path {
   /// Instantiates a path with a point.
   public init(point: CGPoint) {
     currentPoint = point
-    actions = [.move(point)]
+    actions = [.Move(point)]
   }
 }
 
@@ -28,11 +28,11 @@ public extension Path {
 
       for action in actions {
         switch action {
-        case .move(let point):
+        case .Move(let point):
           mutablePath.moveToPoint(point)
-        case .addLine(let point):
+        case .AddLine(let point):
           mutablePath.addLineToPoint(point)
-        case .close():
+        case .Close():
           mutablePath.close()
         }
       }
