@@ -14,6 +14,10 @@ class CGRectExtensionSpec: QuickSpec {
         expect(centeredRect.origin).to(equal(CGPointZero))
       }
 
+      it("should return the center of the rect") {
+        expect(rect.center).to(equal(CGPoint(x: 50, y: 50)))
+      }
+
       it("should return the top left point of the rect") {
         expect(rect.topLeftPoint).to(equal(CGPoint(x: 0, y: rect.height)))
       }

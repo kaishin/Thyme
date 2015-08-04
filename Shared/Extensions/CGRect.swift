@@ -7,6 +7,11 @@ public extension CGRect {
     self.origin = CGPoint(x: center.x - (size.width / 2), y: center.y - (size.height / 2))
   }
 
+  /// Returns the center point of the rect.
+  public var center: CGPoint {
+    return CGPoint(x: midX, y: midY)
+  }
+
   /// Returns a CGPoint instance corresponding to the top left corner of the rect regardless of the platfrom.
   public var topLeftPoint: CGPoint {
     get {

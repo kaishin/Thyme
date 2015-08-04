@@ -1,9 +1,10 @@
 import AppKit
 
 extension NSView {
+  /// The center of the frame.
   public var center: CGPoint {
     get {
-      return CGPoint(x: NSMidX(bounds), y: NSMidY(bounds))
+      return bounds.center
     }
   }
 }
