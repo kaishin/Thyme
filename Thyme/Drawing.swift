@@ -1,5 +1,6 @@
 import UIKit
 
 public func drawInCurrentContext(drawingBlock: DrawingBlock) {
-  UIGraphicsGetCurrentContext().draw(drawingBlock)
+  guard let context = UIGraphicsGetCurrentContext() else { return }
+  context.draw(drawingBlock)
 }

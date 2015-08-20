@@ -11,12 +11,10 @@
 		0090DAA11B358D0A00D724B4 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0090DAA01B358D0A00D724B4 /* CustomView.swift */; };
 		00A114A11B349CC1001E4E70 /* Thyme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A114A01B349CC1001E4E70 /* Thyme.framework */; };
 		00A1632C1B2B3AC90018710D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A1632B1B2B3AC90018710D /* AppDelegate.swift */; };
-		00A1632E1B2B3AC90018710D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A1632D1B2B3AC90018710D /* ViewController.swift */; };
 		00A163311B2B3AC90018710D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A1632F1B2B3AC90018710D /* Main.storyboard */; };
 		00A163331B2B3AC90018710D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00A163321B2B3AC90018710D /* Images.xcassets */; };
 		00A163361B2B3AC90018710D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00A163341B2B3AC90018710D /* LaunchScreen.xib */; };
 		00A163541B2B3BEE0018710D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A163531B2B3BEE0018710D /* AppDelegate.swift */; };
-		00A163561B2B3BEE0018710D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A163551B2B3BEE0018710D /* ViewController.swift */; };
 		00A163581B2B3BEE0018710D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00A163571B2B3BEE0018710D /* Images.xcassets */; };
 		00A1635B1B2B3BEE0018710D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A163591B2B3BEE0018710D /* Main.storyboard */; };
 		00A1636F1B2B3C110018710D /* Thyme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A1636E1B2B3C110018710D /* Thyme.framework */; };
@@ -31,14 +29,12 @@
 		00A163261B2B3AC90018710D /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00A1632A1B2B3AC90018710D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00A1632B1B2B3AC90018710D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		00A1632D1B2B3AC90018710D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		00A163301B2B3AC90018710D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		00A163321B2B3AC90018710D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		00A163351B2B3AC90018710D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		00A1634F1B2B3BEE0018710D /* DemoMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00A163521B2B3BEE0018710D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00A163531B2B3BEE0018710D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		00A163551B2B3BEE0018710D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		00A163571B2B3BEE0018710D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		00A1635A1B2B3BEE0018710D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		00A1636E1B2B3C110018710D /* Thyme.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Thyme.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Thyme-bwvunncfnmimdohjurpndvefznfa/Build/Products/Debug-iphoneos/Thyme.framework"; sourceTree = "<group>"; };
@@ -88,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				00A1632B1B2B3AC90018710D /* AppDelegate.swift */,
-				00A1632D1B2B3AC90018710D /* ViewController.swift */,
 				0090DA9E1B35862F00D724B4 /* CustomView.swift */,
 				00A163291B2B3AC90018710D /* Supporting Files */,
 			);
@@ -111,7 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				00A163531B2B3BEE0018710D /* AppDelegate.swift */,
-				00A163551B2B3BEE0018710D /* ViewController.swift */,
 				0090DAA01B358D0A00D724B4 /* CustomView.swift */,
 				00A163511B2B3BEE0018710D /* Supporting Files */,
 			);
@@ -172,7 +166,9 @@
 		00A1631E1B2B3AC90018710D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Kaishin & Co";
 				TargetAttributes = {
 					00A163251B2B3AC90018710D = {
@@ -230,7 +226,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0090DA9F1B35862F00D724B4 /* CustomView.swift in Sources */,
-				00A1632E1B2B3AC90018710D /* ViewController.swift in Sources */,
 				00A1632C1B2B3AC90018710D /* AppDelegate.swift in Sources */,
 				00F144271B36EB9700375EDD /* Draw.swift in Sources */,
 			);
@@ -241,7 +236,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0090DAA11B358D0A00D724B4 /* CustomView.swift in Sources */,
-				00A163561B2B3BEE0018710D /* ViewController.swift in Sources */,
 				00A163541B2B3BEE0018710D /* AppDelegate.swift in Sources */,
 				00F144281B36EB9700375EDD /* Draw.swift in Sources */,
 			);
@@ -298,6 +292,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -367,6 +362,7 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.kaishin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -378,6 +374,7 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.kaishin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -397,6 +394,7 @@
 				INFOPLIST_FILE = DemoMac/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.kaishin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
@@ -412,6 +410,7 @@
 				INFOPLIST_FILE = DemoMac/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.kaishin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};

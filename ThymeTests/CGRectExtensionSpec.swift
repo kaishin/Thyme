@@ -1,38 +1,33 @@
-import Quick
-import Nimble
-import Thyme
+import XCTest
 import UIKit
+@testable import Thyme
 
-class CGRectExtensionSpec: QuickSpec {
-  override func spec() {
-    describe("CGRectExtension") {
-      let rect = CGRect(origin: CGPointZero, size: CGSize(width: 100, height: 100))
+class CGRectExtensionTests: XCTestCase {
+  let rect = CGRect(origin: CGPointZero, size: CGSize(width: 100, height: 100))
 
-      it("should create a rect using a center point instead of an origin") {
-        let centerPoint = CGPoint(x: 50, y: 50)
-        let centeredRect = CGRect(center: centerPoint, size: CGSize(width: 100, height: 100))
-        expect(centeredRect.origin).to(equal(CGPointZero))
-      }
+  func drawRectWithOrigin() {
+    let centerPoint = CGPoint(x: 50, y: 50)
+    let centeredRect = CGRect(center: centerPoint, size: CGSize(width: 100, height: 100))
+    XCTAssertEqual(centeredRect.origin, CGPointZero)
+  }
 
-      it("should return the center of the rect") {
-        expect(rect.center).to(equal(CGPoint(x: 50, y: 50)))
-      }
+  func testRectCenter() {
+    XCTAssertEqual(rect.center, CGPoint(x: 50, y: 50))
+  }
 
-      it("should return the top left point of the rect") {
-        expect(rect.topLeftPoint).to(equal(CGPointZero))
-      }
+  func testRectTopLeftPoint() {
+    XCTAssertEqual(rect.topLeftPoint, CGPointZero)
+  }
 
-      it("should return the top right point of the rect") {
-        expect(rect.topRightPoint).to(equal(CGPoint(x: rect.width, y: 0)))
-      }
+  func testRectTopRightPoint() {
+    XCTAssertEqual(rect.topRightPoint, CGPoint(x: rect.width, y: 0))
+  }
 
-      it("should return the bottom right point of the rect") {
-        expect(rect.bottomRightPoint).to(equal(CGPoint(x: rect.width, y: rect.height)))
-      }
+  func testRectBottomRightPoint() {
+    XCTAssertEqual(rect.bottomRightPoint, CGPoint(x: rect.width, y: rect.height))
+  }
 
-      it("should return the bottom left point of the rect") {
-        expect(rect.bottomLeftPoint).to(equal(CGPoint(x: 0, y: rect.height)))
-      }
-    }
+  func testRectBottomLeftPoint() {
+    XCTAssertEqual(rect.bottomLeftPoint, CGPoint(x: 0, y: rect.height))
   }
 }

@@ -10,9 +10,9 @@ public enum PathAction {
 extension PathAction {
   /// Flips an action vertically along an axis with a given Y value.
   ///
-  /// :param: axisY The Y coordinate of the symmetry axis.
+  /// - parameter axisY: The Y coordinate of the symmetry axis.
   ///
-  /// :returns: A new action flipped vertically alongside the given Y axis.
+  /// - returns: A new action flipped vertically alongside the given Y axis.
   func flipVertically(axisY: CGFloat) -> PathAction {
     switch self {
     case let .Move(destinationPoint):
@@ -26,9 +26,9 @@ extension PathAction {
 
   /// Flips an action horizontally along an axis with a given X value.
   ///
-  /// :param: axisX The X coordinate of the symmetry axis.
+  /// - parameter axisX: The X coordinate of the symmetry axis.
   ///
-  /// :returns: A new action flipped horizontally alongside the given X axis.
+  /// - returns: A new action flipped horizontally alongside the given X axis.
   func flipHorizontally(axisX: CGFloat) -> PathAction {
     switch self {
     case let .Move(destinationPoint):

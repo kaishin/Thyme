@@ -8,12 +8,12 @@ public extension NSBezierPath {
 
   /// Transforms the bezier path to a `CGPath`
   ///
-  /// :returns: A `CGPath` transformed from the bezier path instance.
+  /// - returns: A `CGPath` transformed from the bezier path instance.
   private func transformToCGPath() -> CGPathRef {
-    var path = CGPathCreateMutable()
+    let path = CGPathCreateMutable()
     if elementCount < 1 { return path }
 
-    var points = UnsafeMutablePointer<NSPoint>.alloc(3)
+    let points = UnsafeMutablePointer<NSPoint>.alloc(3)
     var didClosePath = true
     
     for index in 0..<elementCount {
@@ -41,8 +41,8 @@ public extension NSBezierPath {
 
   /// Fills a path with a given color.
   ///
-  /// :param: color The color to use for filling the path.
-  func fill(#color: NSColor) {
+  /// - parameter color: The color to use for filling the path.
+  func fill(color color: NSColor) {
     color.setFill()
     self.fill()
     NSColor.clearColor().setFill()

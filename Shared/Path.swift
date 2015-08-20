@@ -24,7 +24,7 @@ public extension Path {
   /// A computed CGPath property created from the path.
   var CGPath: CGPathRef {
     get {
-      var mutablePath = CGPathCreateMutable()
+      let mutablePath = CGPathCreateMutable()
 
       for action in actions {
         switch action {
@@ -45,9 +45,9 @@ public extension Path {
 public extension Path {
   /// Flips a path vertically along an axis with a given Y value.
   ///
-  /// :param: axisY The Y coordinate of the symmetry axis.
+  /// - parameter axisY: The Y coordinate of the symmetry axis.
   ///
-  /// :returns: A new path flipped vertically alongside the given Y axis.
+  /// - returns: A new path flipped vertically alongside the given Y axis.
   public func flipVertically(axisY: CGFloat) -> Path {
     let flippedPoint = currentPoint.flipVertically(axisY)
     let flippedActions = actions.map { $0.flipVertically(axisY) }
@@ -56,9 +56,9 @@ public extension Path {
 
   /// Flips a path horizontally along an axis with a given X value.
   ///
-  /// :param: axisX The X coordinate of the symmetry axis.
+  /// - parameter axisX: The X coordinate of the symmetry axis.
   ///
-  /// :returns: A new path flipped horizontally alongside the given X axis.
+  /// - returns: A new path flipped horizontally alongside the given X axis.
   public func flipHorizontally(axisX: CGFloat) -> Path {
     let flippedPoint = currentPoint.flipHorizontally(axisX)
     let flippedActions = actions.map { $0.flipHorizontally(axisX) }

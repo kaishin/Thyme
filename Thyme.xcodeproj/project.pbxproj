@@ -20,14 +20,6 @@
 		00A163151B2B30DE0018710D /* CGContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A163111B2B30DE0018710D /* CGContext.swift */; };
 		00A163161B2B30DE0018710D /* CGContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A163111B2B30DE0018710D /* CGContext.swift */; };
 		00A1631C1B2B31340018710D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A1631B1B2B31340018710D /* CoreGraphics.framework */; };
-		00A163741B2B3EC80018710D /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A163721B2B3EC80018710D /* Nimble.framework */; };
-		00A163751B2B3EC80018710D /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A163731B2B3EC80018710D /* Quick.framework */; };
-		00A163781B2B3ED50018710D /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A163761B2B3ED50018710D /* Nimble.framework */; };
-		00A163791B2B3ED50018710D /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A163771B2B3ED50018710D /* Quick.framework */; };
-		00A1637B1B2B407C0018710D /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 00A163721B2B3EC80018710D /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		00A1637C1B2B40830018710D /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 00A163731B2B3EC80018710D /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		00A1637E1B2B408E0018710D /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 00A163771B2B3ED50018710D /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		00A1637F1B2B409C0018710D /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 00A163761B2B3ED50018710D /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		00A163811B2B4E4C0018710D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A163191B2B31210018710D /* CoreGraphics.framework */; };
 		00A163831B2BDE770018710D /* PathHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A163821B2BDE770018710D /* PathHelpers.swift */; };
 		00A163841B2BDE770018710D /* PathHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A163821B2BDE770018710D /* PathHelpers.swift */; };
@@ -84,8 +76,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				00A1637C1B2B40830018710D /* Quick.framework in CopyFiles */,
-				00A1637B1B2B407C0018710D /* Nimble.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,8 +85,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				00A1637F1B2B409C0018710D /* Nimble.framework in CopyFiles */,
-				00A1637E1B2B408E0018710D /* Quick.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,10 +109,6 @@
 		00A163111B2B30DE0018710D /* CGContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGContext.swift; sourceTree = "<group>"; };
 		00A163191B2B31210018710D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		00A1631B1B2B31340018710D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		00A163721B2B3EC80018710D /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = SOURCE_ROOT; };
-		00A163731B2B3EC80018710D /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = SOURCE_ROOT; };
-		00A163761B2B3ED50018710D /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = SOURCE_ROOT; };
-		00A163771B2B3ED50018710D /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = SOURCE_ROOT; };
 		00A163821B2BDE770018710D /* PathHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathHelpers.swift; sourceTree = "<group>"; };
 		00A163851B2BE0490018710D /* CGMutablePath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGMutablePath.swift; sourceTree = "<group>"; };
 		00A163881B2BE5090018710D /* Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
@@ -160,8 +144,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				00A162E11B2A69150018710D /* Thyme.framework in Frameworks */,
-				00A163741B2B3EC80018710D /* Nimble.framework in Frameworks */,
-				00A163751B2B3EC80018710D /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,8 +160,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				00A163011B2A6AFE0018710D /* Thyme.framework in Frameworks */,
-				00A163781B2B3ED50018710D /* Nimble.framework in Frameworks */,
-				00A163791B2B3ED50018710D /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,8 +223,6 @@
 		00A162E51B2A69150018710D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				00A163721B2B3EC80018710D /* Nimble.framework */,
-				00A163731B2B3EC80018710D /* Quick.framework */,
 				00A162E61B2A69150018710D /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -285,8 +263,6 @@
 		00A163051B2A6AFE0018710D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				00A163761B2B3ED50018710D /* Nimble.framework */,
-				00A163771B2B3ED50018710D /* Quick.framework */,
 				00A163061B2A6AFE0018710D /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -439,7 +415,9 @@
 		00A162CC1B2A69140018710D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Kaishin & Co";
 				TargetAttributes = {
 					00A162D41B2A69140018710D = {
@@ -611,6 +589,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -690,6 +669,7 @@
 				INFOPLIST_FILE = Thyme/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.kaishin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -708,6 +688,7 @@
 				INFOPLIST_FILE = Thyme/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.kaishin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -717,9 +698,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -727,6 +707,7 @@
 				);
 				INFOPLIST_FILE = ThymeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.kaishin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -735,12 +716,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = ThymeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.kaishin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -765,6 +746,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.kaishin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_MODULE_NAME = Thyme;
 				PRODUCT_NAME = Thyme;
 				SDKROOT = macosx;
@@ -788,6 +770,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.kaishin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_MODULE_NAME = Thyme;
 				PRODUCT_NAME = Thyme;
 				SDKROOT = macosx;
@@ -803,7 +786,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -812,6 +794,7 @@
 				INFOPLIST_FILE = ThymeMacTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.kaishin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
@@ -824,11 +807,11 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				INFOPLIST_FILE = ThymeMacTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.kaishin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
