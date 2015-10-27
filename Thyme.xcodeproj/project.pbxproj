@@ -343,6 +343,7 @@
 				00A162D11B2A69140018710D /* Frameworks */,
 				00A162D21B2A69140018710D /* Headers */,
 				00A162D31B2A69140018710D /* Resources */,
+				0024871C1BE029A10092900B /* Set Version */,
 			);
 			buildRules = (
 			);
@@ -380,6 +381,7 @@
 				00A162F21B2A6AFE0018710D /* Frameworks */,
 				00A162F31B2A6AFE0018710D /* Headers */,
 				00A162F41B2A6AFE0018710D /* Resources */,
+				0024871E1BE029D60092900B /* Set Version */,
 			);
 			buildRules = (
 			);
@@ -484,6 +486,37 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0024871C1BE029A10092900B /* Set Version */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Set Version";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "GIT_RELEASE_VERSION=$(git describe --tags --always --abbrev=0)\n/usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString ${GIT_RELEASE_VERSION#*v}\" \"${INFOPLIST_FILE}\"";
+		};
+		0024871E1BE029D60092900B /* Set Version */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Set Version";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "GIT_RELEASE_VERSION=$(git describe --tags --always --abbrev=0)\n/usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString ${GIT_RELEASE_VERSION#*v}\" \"${INFOPLIST_FILE}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		00A162D01B2A69140018710D /* Sources */ = {
