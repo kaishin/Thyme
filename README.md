@@ -1,6 +1,6 @@
 <img src="https://raw.github.com/kaishin/Thyme/master/logo.png" width="100" alt="logo" />
 
-# Thyme [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+# Thyme [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![Travis](http://img.shields.io/travis/kaishin/Thyme.svg?style=flat)](https://travis-ci.org/kaishin/Thyme/)
 
 A framework that wraps *Core Graphics* in a functional, descriptive, and more modern API.
 
