@@ -12,7 +12,7 @@ public extension CGRect {
     return CGPoint(x: midX, y: midY)
   }
 
-  /// Returns a CGPoint instance corresponding to the top left corner of the rect regardless of the platfrom.
+  /// Returns a CGPoint instance corresponding to the top left corner of the rect regardless of the platform.
   public var topLeftPoint: CGPoint {
     get {
       var point = CGPointZero
@@ -20,44 +20,40 @@ public extension CGRect {
       executeOn(iOS: {
         point = self.origin
       }, mac: {
-        point = CGPoint(x: 0.0, y: self.height)
+        point = CGPoint(x: self.origin.x, y: self.height)
       })
 
       return point
     }
   }
 
-  /// Returns a CGPoint instance corresponding to the bottom left corner of the rect regardless of the platfrom.
+  /// Returns a CGPoint instance corresponding to the bottom left corner of the rect regardless of the platform.
   public var bottomLeftPoint: CGPoint {
-    get {
-      var point = CGPointZero
+    var point = CGPointZero
 
-      executeOn(iOS: {
-        point = CGPoint(x: 0.0, y: self.height)
-      }, mac: {
-        point = self.origin
-      })
+    executeOn(iOS: {
+      point = CGPoint(x: self.origin.x, y: self.height)
+    }, mac: {
+      point = self.origin
+    })
 
-      return point
-    }
+    return point
   }
 
-  /// Returns a CGPoint instance corresponding to the top right corner of the rect regardless of the platfrom.
+  /// Returns a CGPoint instance corresponding to the top right corner of the rect regardless of the platform.
   public var topRightPoint: CGPoint {
-    get {
-      var point = CGPointZero
+    var point = CGPointZero
 
-      executeOn(iOS: {
-        point = CGPoint(x: self.width, y: 0.0)
-      }, mac: {
-        point = CGPoint(x: self.width, y: self.height)
-      })
+    executeOn(iOS: {
+      point = CGPoint(x: self.width, y: self.origin.y)
+    }, mac: {
+      point = CGPoint(x: self.width, y: self.height)
+    })
 
-      return point
-    }
+    return point
   }
 
-  /// Returns a CGPoint instance corresponding to the bottom right corner of the rect regardless of the platfrom.
+  /// Returns a CGPoint instance corresponding to the bottom right corner of the rect regardless of the platform.
   public var bottomRightPoint: CGPoint {
     get {
       var point = CGPointZero
@@ -65,7 +61,7 @@ public extension CGRect {
       executeOn(iOS: {
         point = CGPoint(x: self.width, y: self.height)
       }, mac: {
-        point = CGPoint(x: self.width, y: 0)
+        point = CGPoint(x: self.width, y: self.origin.y)
       })
 
       return point
