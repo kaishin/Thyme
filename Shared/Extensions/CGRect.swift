@@ -20,7 +20,7 @@ public extension CGRect {
       executeOn(iOS: {
         point = self.origin
       }, mac: {
-        point = CGPoint(x: self.origin.x, y: self.height)
+        point = CGPoint(x: self.origin.x, y: self.maxY)
       })
 
       return point
@@ -32,7 +32,7 @@ public extension CGRect {
     var point = CGPointZero
 
     executeOn(iOS: {
-      point = CGPoint(x: self.origin.x, y: self.height)
+      point = CGPoint(x: self.origin.x, y: self.maxY)
     }, mac: {
       point = self.origin
     })
@@ -47,7 +47,7 @@ public extension CGRect {
     executeOn(iOS: {
       point = CGPoint(x: self.width, y: self.origin.y)
     }, mac: {
-      point = CGPoint(x: self.width, y: self.height)
+      point = CGPoint(x: self.width, y: self.maxY)
     })
 
     return point
@@ -59,7 +59,7 @@ public extension CGRect {
       var point = CGPointZero
 
       executeOn(iOS: {
-        point = CGPoint(x: self.width, y: self.height)
+        point = CGPoint(x: self.width, y: self.maxY)
       }, mac: {
         point = CGPoint(x: self.width, y: self.origin.y)
       })
