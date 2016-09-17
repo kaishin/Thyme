@@ -16,24 +16,24 @@ public struct Path {
   /// Instantiates a path with a point.
   public init(point: CGPoint) {
     currentPoint = point
-    actions = [.Move(point)]
+    actions = [.move(point)]
   }
 }
 
 public extension Path {
   /// A computed CGPath property created from the path.
-  var CGPath: CGPathRef {
+  var cgPath: CGPath {
     get {
-      let mutablePath = CGPathCreateMutable()
+      let mutablePath = CGMutablePath()
 
       for action in actions {
         switch action {
-        case .Move(let point):
-          mutablePath.moveToPoint(point)
-        case .AddLine(let point):
-          mutablePath.addLineToPoint(point)
-        case .Close():
-          mutablePath.close()
+        case .move(let point):
+          mutablePath.move(to: point)
+        case .addLine(let point):
+          mutablePath.addLine(to: point)
+        case .close():
+          mutablePath.closeSubpath()
         }
       }
 
@@ -48,9 +48,9 @@ public extension Path {
   /// - parameter axisY: The Y coordinate of the symmetry axis.
   ///
   /// - returns: A new path flipped vertically alongside the given Y axis.
-  public func flipVertically(axisY: CGFloat) -> Path {
-    let flippedPoint = currentPoint.flipVertically(axisY)
-    let flippedActions = actions.map { $0.flipVertically(axisY) }
+  public func flipVertically(by axisY: CGFloat) -> Path {
+    let flippedPoint = currentPoint.flipVertically(by: axisY)
+    let flippedActions = actions.map { $0.flipVertically(by: axisY) }
     return Path(point: flippedPoint, pathActions: flippedActions)
   }
 
@@ -59,9 +59,68 @@ public extension Path {
   /// - parameter axisX: The X coordinate of the symmetry axis.
   ///
   /// - returns: A new path flipped horizontally alongside the given X axis.
-  public func flipHorizontally(axisX: CGFloat) -> Path {
-    let flippedPoint = currentPoint.flipHorizontally(axisX)
-    let flippedActions = actions.map { $0.flipHorizontally(axisX) }
+  public func flipHorizontally(by axisX: CGFloat) -> Path {
+    let flippedPoint = currentPoint.flipHorizontally(by: axisX)
+    let flippedActions = actions.map { $0.flipHorizontally(by: axisX) }
     return Path(point: flippedPoint, pathActions: flippedActions)
+  }
+}
+
+public extension Path {
+  /// Returns a new path moved to a given a point.
+  ///
+  /// - parameter point: The point to move to.
+  ///
+  /// - returns: A new path moved to the given point.
+  public func move(to point: CGPoint) -> Path {
+    return Path(point: point, pathActions: actions + [.move(point)])
+  }
+
+  /// Returns a new path after adding a line to a given point in an existing path.
+  ///
+  /// - parameter point: The end point of the line.
+  ///
+  /// - returns: A new path with a new line added to it.
+  public func addLine(to point: CGPoint) -> Path {
+    return Path(point: point, pathActions: actions + [.addLine(point)])
+  }
+
+
+  /// Returns a new path after closing the existing path.
+  ///  ///
+  /// - returns: A new closed path.
+  public func close() -> Path {
+    return Path(point: currentPoint, pathActions: actions + [.close])
+  }
+
+  /// Returns a new path after adding a line towards a given platform-agnostic direction in the existing path.
+  ///
+  /// - parameter directions: A dictionary containing one or more `Direction` as keys, and delta distance as values. The path will be moved  by the delta distance towards the corresponding value.
+  ///
+  /// - returns: A new path with a new line added to it.
+  public func addLine(towards directions: [Direction: Float]) -> Path {
+    var destinationPoint = currentPoint
+    for (direction, delta) in directions {
+      switch direction {
+      case .top:
+        executeOn(iOS: {
+          destinationPoint.y -= CGFloat(delta)
+        }, mac: {
+          destinationPoint.y += CGFloat(delta)
+        })
+      case .right:
+        destinationPoint.x += CGFloat(delta)
+      case .bottom:
+        executeOn(iOS: {
+          destinationPoint.y += CGFloat(delta)
+        }, mac: {
+          destinationPoint.y -= CGFloat(delta)
+        })
+      case .left:
+        destinationPoint.x -= CGFloat(delta)
+      }
+    }
+
+    return Path(point: destinationPoint, pathActions: actions + [.addLine(destinationPoint)])
   }
 }

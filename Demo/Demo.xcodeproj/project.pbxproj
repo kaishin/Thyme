@@ -18,9 +18,24 @@
 		00A163581B2B3BEE0018710D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00A163571B2B3BEE0018710D /* Images.xcassets */; };
 		00A1635B1B2B3BEE0018710D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A163591B2B3BEE0018710D /* Main.storyboard */; };
 		00A1636F1B2B3C110018710D /* Thyme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A1636E1B2B3C110018710D /* Thyme.framework */; };
+		00E9BF801D8D987700E4F3AD /* Thyme.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00E9BF7E1D8D987700E4F3AD /* Thyme.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		00F144271B36EB9700375EDD /* Draw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F144261B36EB9700375EDD /* Draw.swift */; };
 		00F144281B36EB9700375EDD /* Draw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F144261B36EB9700375EDD /* Draw.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		00E9BF811D8D987700E4F3AD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				00E9BF801D8D987700E4F3AD /* Thyme.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0090DA9E1B35862F00D724B4 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
@@ -38,6 +53,7 @@
 		00A163571B2B3BEE0018710D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		00A1635A1B2B3BEE0018710D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		00A1636E1B2B3C110018710D /* Thyme.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Thyme.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Thyme-bwvunncfnmimdohjurpndvefznfa/Build/Products/Debug-iphoneos/Thyme.framework"; sourceTree = "<group>"; };
+		00E9BF7E1D8D987700E4F3AD /* Thyme.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Thyme.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		00F144261B36EB9700375EDD /* Draw.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Draw.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,6 +80,7 @@
 		00A1631D1B2B3AC90018710D = {
 			isa = PBXGroup;
 			children = (
+				00E9BF7E1D8D987700E4F3AD /* Thyme.framework */,
 				00F144261B36EB9700375EDD /* Draw.swift */,
 				00A163281B2B3AC90018710D /* Demo */,
 				00A163501B2B3BEE0018710D /* DemoMac */,
@@ -150,6 +167,7 @@
 				00A1634B1B2B3BEE0018710D /* Sources */,
 				00A1634C1B2B3BEE0018710D /* Frameworks */,
 				00A1634D1B2B3BEE0018710D /* Resources */,
+				00E9BF811D8D987700E4F3AD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -168,14 +186,16 @@
 			attributes = {
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Kaishin & Co";
 				TargetAttributes = {
 					00A163251B2B3AC90018710D = {
 						CreatedOnToolsVersion = 6.3.2;
+						LastSwiftMigration = 0800;
 					};
 					00A1634E1B2B3BEE0018710D = {
 						CreatedOnToolsVersion = 6.3.2;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -284,8 +304,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -330,8 +352,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -350,6 +374,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -364,6 +389,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "co.kaishin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -376,6 +402,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "co.kaishin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -392,11 +419,12 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = DemoMac/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "co.kaishin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -408,11 +436,12 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = DemoMac/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "co.kaishin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

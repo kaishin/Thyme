@@ -2,9 +2,9 @@ import CoreGraphics
 
 /// Various path actions that are used to create a path. Possible values: `move(CGPoint)`, `addLine(CGPoint)`, and `close`.
 public enum PathAction {
-  case Move(CGPoint)
-  case AddLine(CGPoint)
-  case Close
+  case move(CGPoint)
+  case addLine(CGPoint)
+  case close
 }
 
 extension PathAction {
@@ -13,14 +13,14 @@ extension PathAction {
   /// - parameter axisY: The Y coordinate of the symmetry axis.
   ///
   /// - returns: A new action flipped vertically alongside the given Y axis.
-  func flipVertically(axisY: CGFloat) -> PathAction {
+  func flipVertically(by axisY: CGFloat) -> PathAction {
     switch self {
-    case let .Move(destinationPoint):
-      return .Move(destinationPoint.flipVertically(axisY))
-    case let .AddLine(destinationPoint):
-      return .AddLine(destinationPoint.flipVertically(axisY))
-    case .Close:
-      return .Close
+    case let .move(destinationPoint):
+      return .move(destinationPoint.flipVertically(by: axisY))
+    case let .addLine(destinationPoint):
+      return .addLine(destinationPoint.flipVertically(by: axisY))
+    case .close:
+      return .close
     }
   }
 
@@ -29,14 +29,14 @@ extension PathAction {
   /// - parameter axisX: The X coordinate of the symmetry axis.
   ///
   /// - returns: A new action flipped horizontally alongside the given X axis.
-  func flipHorizontally(axisX: CGFloat) -> PathAction {
+  func flipHorizontally(by axisX: CGFloat) -> PathAction {
     switch self {
-    case let .Move(destinationPoint):
-      return .Move(destinationPoint.flipHorizontally(axisX))
-    case let .AddLine(destinationPoint):
-      return .AddLine(destinationPoint.flipHorizontally(axisX))
-    case .Close:
-      return .Close
+    case let .move(destinationPoint):
+      return .move(destinationPoint.flipHorizontally(by: axisX))
+    case let .addLine(destinationPoint):
+      return .addLine(destinationPoint.flipHorizontally(by: axisX))
+    case .close:
+      return .close
     }
   }
 }

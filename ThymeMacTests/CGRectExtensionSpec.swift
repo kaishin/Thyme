@@ -3,12 +3,12 @@ import AppKit
 @testable import Thyme
 
 class CGRectExtensionTests: XCTestCase {
-  let rect = CGRect(origin: CGPointZero, size: CGSize(width: 100, height: 100))
+  let rect = CGRect(origin: CGPoint.zero, size: CGSize(width: 100, height: 100))
 
   func drawRectWithOrigin() {
     let centerPoint = CGPoint(x: 50, y: 50)
-    let centeredRect = CGRect(center: centerPoint, size: CGSize(width: 100, height: 100))
-    XCTAssertEqual(centeredRect.origin, CGPointZero)
+    let centeredRect = CGRect(origin: centerPoint, size: CGSize(width: 100, height: 100))
+    XCTAssertEqual(centeredRect.origin, CGPoint.zero)
   }
 
   func testRectCenter() {
@@ -28,6 +28,6 @@ class CGRectExtensionTests: XCTestCase {
   }
 
   func testRectBottomLeftPoint() {
-    XCTAssertEqual(rect.bottomLeftPoint, CGPointZero)
+    XCTAssertEqual(rect.bottomLeftPoint, CGPoint.zero)
   }
 }

@@ -7,28 +7,28 @@ class PathTests: XCTestCase {
 
   override func setUp() {
     super.setUp()
-    let path = Path(point: CGPointZero)
-      |> addLineTowards([.Right: 100])
-      |> addLineTowards([.Bottom: 100])
-      |> addLineTowards([.Left: 100])
-      |> addLineTowards([.Top: 100])
-      |> close
+    let path = Path(point: CGPoint.zero)
+      .addLine(towards: [.right: 100])
+      .addLine(towards: [.bottom: 100])
+      .addLine(towards: [.left: 100])
+      .addLine(towards: [.top: 100])
+      .close()
     
-    quartzPath = path.CGPath
+    quartzPath = path.cgPath
   }
 
   func testPathClosesAtOrigin() {
-    XCTAssertEqual(CGPathGetCurrentPoint(quartzPath), CGPointZero)
+    XCTAssertEqual(quartzPath.currentPoint, CGPoint.zero)
   }
 
   func testCreateRectangle() {
     let size = CGSize(width: 100, height: 100)
-    let boundingBox = CGPathGetBoundingBox(quartzPath)
+    let boundingBox = quartzPath.boundingBox
     XCTAssertEqual(boundingBox.size, size)
   }
 
   func testUsePlatformCoordinates() {
-    XCTAssertTrue(CGPathContainsPoint(quartzPath, nil, CGPoint(x: 50, y: 50), false))
+    XCTAssertTrue(quartzPath.contains(CGPoint(x: 50, y: 50)))
   }
 }
 

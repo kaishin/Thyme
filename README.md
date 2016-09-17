@@ -2,7 +2,12 @@
 
 # Thyme [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![Travis](http://img.shields.io/travis/kaishin/Thyme.svg?style=flat)](https://travis-ci.org/kaishin/Thyme/)
 
-A framework that wraps *Core Graphics* in a functional, descriptive, and more modern API.
+A thin wrapper around *Core Graphics* that makes it possible to reuse the same drawing code on both iOS and macOS.
+
+### Compatibility
+
+Swift 3 / Xcode 8: 1.0
+Swift 2.2 / Xcode 7: 0.3.2
 
 ### Installation
 #### [Carthage](https://github.com/Carthage/Carthage)
@@ -31,11 +36,11 @@ Thyme introduces the `Path` type to help you contruct your paths. Instead of pro
 
 ~~~swift
 let square = Path(point: CGPointZero)
-  |> addLineTowards([.Right: 100])
-  |> addLineTowards([.Bottom: 100])
-  |> addLineTowards([.Left: 100])
-  |> addLineTowards([.Top: 100])
-  |> close
+  .addLine(towards: [.Right: 100])
+  .addLine(towards: [.Bottom: 100])
+  .addLine(towards: [.Left: 100])
+  .addLine(towards: [.Top: 100])
+  .close()
 ~~~
 
 The code snippet above describes a square-shaped path in 5 steps. You can then obtain a `CGPathRef` using the `CGPath` property of `Path`.
@@ -46,11 +51,11 @@ This is a simplified example to demonstrate how you can use the same drawing cod
 // Shared Code
 func drawIcon(context: CGContextRef, rect: CGRect, fillColor: CGColorRef) {
   let triangle = Path(point: rect.topLeftPoint)
-    |> addLineTo(rect.topRightPoint)
-    |> addLineTowards([.Left: rect.width / 2, .Bottom: rect.height])
-    |> close
+    .addLine(to: rect.topRightPoint)
+    .addLine(towards: [.left: rect.width / 2, .bottom: rect.height])
+    .close()
 
-  context.addPath(triangle.CGPath)
+  context.addPath(triangle.cgPath)
   context.setFillColor(fillColor)
   context.fillPath()
 }
@@ -76,4 +81,4 @@ class CustomView: NSView {
 
 ### License
 
-Copyright 2015 Reda Lemeden. BSD Licence. See LICENSE file for more info.
+Copyright 2015-2016 Reda Lemeden. BSD Licence. See LICENSE file for more info.

@@ -6,7 +6,7 @@ extension CGPoint {
   /// - parameter axisY: The Y coordinate of the symmetry axis.
   ///
   /// - returns: A new point flipped vertically alongside the given Y axis.
-  func flipVertically(axisY: CGFloat) -> CGPoint {
+  func flipVertically(by axisY: CGFloat) -> CGPoint {
     return CGPoint(x: x, y: (2 * axisY) - y)
   }
 
@@ -15,7 +15,7 @@ extension CGPoint {
   /// - parameter axisX: The X coordinate of the symmetry axis.
   ///
   /// - returns: A new point flipped horizontally alongside the given X axis.
-  func flipHorizontally(axisX: CGFloat) -> CGPoint {
+  func flipHorizontally(by axisX: CGFloat) -> CGPoint {
     return CGPoint(x: (2 * axisX) - x, y: y)
   }
 }

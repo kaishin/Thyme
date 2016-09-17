@@ -1,19 +1,19 @@
 import CoreGraphics
 import Thyme
 
-func drawIcon(context: CGContextRef, rect: CGRect, fillColor: CGColorRef, otherFillColor: CGColorRef) {
+func drawIcon(_ context: CGContext, rect: CGRect, fillColor: CGColor, otherFillColor: CGColor) {
   let triangle = Path(point: rect.topLeftPoint)
-    |> addLineTo(rect.topRightPoint)
-    |> addLineTowards([.Left: Float(rect.width / 2), .Bottom: Float(rect.height - 40)])
-    |> close
+    .addLine(to: rect.topRightPoint)
+    .addLine(towards: [.left: Float(rect.width / 2), .bottom: Float(rect.height - 40)])
+    .close()
 
-  let flippedTriangle = triangle.flipVertically(rect.midY)
+  let flippedTriangle = triangle.flipVertically(by: rect.midY)
 
   context.setFillColor(fillColor)
-  context.addPath(triangle.CGPath)
+  context.addPath(triangle.cgPath)
   context.fillPath()
 
   context.setFillColor(otherFillColor)
-  context.addPath(flippedTriangle.CGPath)
+  context.addPath(flippedTriangle.cgPath)
   context.fillPath()
 }

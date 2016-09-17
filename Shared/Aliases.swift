@@ -1,3 +1,3 @@
 import CoreGraphics
 
-public typealias DrawingBlock = CGContext -> Void
+public typealias DrawingBlock = (CGContext) -> Void

@@ -1,8 +1,8 @@
 import AppKit
 
 extension NSGraphicsContext {
-  /// Returns the current graphics context as a `CGContext`.
-  public static var current: CGContextRef? {
-    return currentContext()?.CGContext
+  /// The optional current graphics context as a `CGContext`.
+  public static var current: CGContext? {
+    return current()?.cgContext
   }
 }
