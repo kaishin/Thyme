@@ -43,7 +43,7 @@ public extension NSBezierPath {
   ///
   /// - parameter color: The color to use for filling the path.
   func fill(with color: NSColor) {
-    let context = NSGraphicsContext.current
+    let context = NSGraphicsContext.current?.cgContext
     context?.saveGState()
     color.setFill()
     self.fill()

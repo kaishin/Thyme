@@ -32,7 +32,7 @@ public extension Path {
           mutablePath.move(to: point)
         case .addLine(let point):
           mutablePath.addLine(to: point)
-        case .close():
+        case .close:
           mutablePath.closeSubpath()
         }
       }

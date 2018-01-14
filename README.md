@@ -1,15 +1,13 @@
 <img src="https://raw.github.com/kaishin/Thyme/master/logo.png" width="100" alt="logo" />
 
-# Thyme [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![Travis](http://img.shields.io/travis/kaishin/Thyme.svg?style=flat)](https://travis-ci.org/kaishin/Thyme/)
+# Thyme
+
+[![GitHub release](https://img.shields.io/github/release/kaishin/Thyme.svg)](https://github.com/kaishin/Thyme/releases/latest) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![CocoaPods](https://img.shields.io/cocoapods/v/Thyme.svg)](https://cocoapods.org/pods/Thyme) ![Swift 4.0](https://img.shields.io/badge/Swift-4.0-orange.svg) ![platforms](https://img.shields.io/badge/platforms-iOS%20%7C%20macOS-lightgrey.svg)
 
 A thin wrapper around *Core Graphics* that makes it possible to reuse the same drawing code on both iOS and macOS.
 
-### Compatibility
-
-Swift 3 / Xcode 8: 1.0
-Swift 2.2 / Xcode 7: 0.3.2
-
 ### Installation
+
 #### [Carthage](https://github.com/Carthage/Carthage)
 
 - Add the following to your Cartfile: `github "kaishin/Thyme"`
@@ -19,14 +17,11 @@ for up to date installation instructions.
 
 [carthage-installation]: https://github.com/Carthage/Carthage#adding-frameworks-to-an-application
 
-#### Git Submodules
+#### [CocoaPods](http://cocoapods.org)
 
-- Add this repo as a submodule, and add the project file to your workspace. You
-can then link against `Thyme.framework` for your application target.
-
-#### Cocoapods
-
-*Coming Soon*
+- Add the following to your [Podfile](http://guides.cocoapods.org/using/the-podfile.html): `pod 'Thyme'`
+- You will also need to make sure you're opting into using frameworks: `use_frameworks!`
+- Then run `pod install`.
 
 ### Usage
 
@@ -79,6 +74,13 @@ class CustomView: NSView {
 }
 ~~~
 
+### Requirements
+
+- Swift 4.0+
+- Xcode 9
+- iOS 10+
+- macOS 10.10+
+
 ### License
 
-Copyright 2015-2016 Reda Lemeden. BSD Licence. See LICENSE file for more info.
+Copyright 2015-2018 Reda Lemeden. BSD Licence. See LICENSE file for more info.
