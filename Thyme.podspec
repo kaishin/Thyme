@@ -7,8 +7,8 @@ Pod::Spec.new do |s|
   s.license = { :type => "BSD", :file => "LICENSE" }
   s.author = { "Reda Lemeden" => "git@kaishin.haz.email" }
   s.source = { :git => "https://github.com/kaishin/Thyme.git", :tag => "v#{s.version}" }
-  s.ios.source_files = "Thyme/**/*.{h,swift}"
-  s.osx.source_files = "ThymeMac/**/*.{h,swift}"
+  s.ios.source_files = "Thyme/**/*.{h,swift}", "Shared/**/*.{h,swift}"
+  s.osx.source_files = "ThymeMac/**/*.{h,swift}", "Shared/**/*.{h,swift}"
   s.requires_arc = true
   s.ios.deployment_target = "10.0"
   s.osx.deployment_target = "10.10"
