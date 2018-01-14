@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name = "Thyme"
-  s.version = "2.0.0"
-  s.summary = "A short description of Thyme."
+  s.version = "2.0"
+  s.summary = "A thin wrapper around *Core Graphics* that makes it possible to reuse the same drawing code on both iOS and macOS."
   s.homepage = "https://github.com/kaishin/Thyme"
   s.social_media_url = "http://twitter.com/kaishin"
   s.license = { :type => "BSD", :file => "LICENSE" }
