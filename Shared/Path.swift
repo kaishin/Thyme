@@ -48,7 +48,7 @@ public extension Path {
   /// - parameter axisY: The Y coordinate of the symmetry axis.
   ///
   /// - returns: A new path flipped vertically alongside the given Y axis.
-  public func flipVertically(by axisY: CGFloat) -> Path {
+  func flipVertically(by axisY: CGFloat) -> Path {
     let flippedPoint = currentPoint.flipVertically(by: axisY)
     let flippedActions = actions.map { $0.flipVertically(by: axisY) }
     return Path(point: flippedPoint, pathActions: flippedActions)
@@ -59,7 +59,7 @@ public extension Path {
   /// - parameter axisX: The X coordinate of the symmetry axis.
   ///
   /// - returns: A new path flipped horizontally alongside the given X axis.
-  public func flipHorizontally(by axisX: CGFloat) -> Path {
+  func flipHorizontally(by axisX: CGFloat) -> Path {
     let flippedPoint = currentPoint.flipHorizontally(by: axisX)
     let flippedActions = actions.map { $0.flipHorizontally(by: axisX) }
     return Path(point: flippedPoint, pathActions: flippedActions)
@@ -72,7 +72,7 @@ public extension Path {
   /// - parameter point: The point to move to.
   ///
   /// - returns: A new path moved to the given point.
-  public func move(to point: CGPoint) -> Path {
+  func move(to point: CGPoint) -> Path {
     return Path(point: point, pathActions: actions + [.move(point)])
   }
 
@@ -81,7 +81,7 @@ public extension Path {
   /// - parameter point: The end point of the line.
   ///
   /// - returns: A new path with a new line added to it.
-  public func addLine(to point: CGPoint) -> Path {
+  func addLine(to point: CGPoint) -> Path {
     return Path(point: point, pathActions: actions + [.addLine(point)])
   }
 
@@ -89,7 +89,7 @@ public extension Path {
   /// Returns a new path after closing the existing path.
   ///  ///
   /// - returns: A new closed path.
-  public func close() -> Path {
+  func close() -> Path {
     return Path(point: currentPoint, pathActions: actions + [.close])
   }
 
@@ -98,7 +98,7 @@ public extension Path {
   /// - parameter directions: A dictionary containing one or more `Direction` as keys, and delta distance as values. The path will be moved  by the delta distance towards the corresponding value.
   ///
   /// - returns: A new path with a new line added to it.
-  public func addLine(towards directions: [Direction: Float]) -> Path {
+  func addLine(towards directions: [Direction: Float]) -> Path {
     var destinationPoint = currentPoint
     for (direction, delta) in directions {
       switch direction {

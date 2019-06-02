@@ -2,7 +2,7 @@ import Quartz
 
 public extension NSBezierPath {
   /// Returns `CGPath` equivalent.
-  public var cgPath: CGPath {
+  var cgPath: CGPath {
     get { return transformToCGPath() }
   }
 
@@ -20,22 +20,24 @@ public extension NSBezierPath {
       let pathType = element(at: index, associatedPoints: points)
       
       switch pathType {
-      case .moveToBezierPathElement:
+      case .moveTo:
         path.move(to: points[0])
-      case .lineToBezierPathElement:
+      case .lineTo:
         path.addLine(to: points[0])
         didClosePath = false
-      case .curveToBezierPathElement:
+      case .curveTo:
         path.addCurve(to: points[2], control1: points[0], control2: points[1])
         didClosePath = false
-      case .closePathBezierPathElement:
+      case .closePath:
         path.closeSubpath()
         didClosePath = true
+      @unknown default:
+        fatalError()
       }
     }
 
     if !didClosePath { path.closeSubpath() }
-    points.deallocate(capacity: 3)
+    points.deallocate()
     return path
   }
 

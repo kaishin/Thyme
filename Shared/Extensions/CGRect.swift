@@ -2,18 +2,19 @@ import CoreGraphics
 
 public extension CGRect {
   /// Instantiates a rect using a center point instead of an origin.
-  public init(center: CGPoint, size: CGSize) {
+  init(center: CGPoint, size: CGSize) {
+    self.init()
     self.size = size
     self.origin = CGPoint(x: center.x - (size.width / 2), y: center.y - (size.height / 2))
   }
 
   /// Returns the center point of the rect.
-  public var center: CGPoint {
+  var center: CGPoint {
     return CGPoint(x: midX, y: midY)
   }
 
   /// Returns a CGPoint instance corresponding to the top left corner of the rect regardless of the platform.
-  public var topLeftPoint: CGPoint {
+  var topLeftPoint: CGPoint {
     get {
       var point = CGPoint.zero
 
@@ -28,7 +29,7 @@ public extension CGRect {
   }
 
   /// Returns a CGPoint instance corresponding to the bottom left corner of the rect regardless of the platform.
-  public var bottomLeftPoint: CGPoint {
+  var bottomLeftPoint: CGPoint {
     var point = CGPoint.zero
 
     executeOn(iOS: {
@@ -41,7 +42,7 @@ public extension CGRect {
   }
 
   /// Returns a CGPoint instance corresponding to the top right corner of the rect regardless of the platform.
-  public var topRightPoint: CGPoint {
+  var topRightPoint: CGPoint {
     var point = CGPoint.zero
 
     executeOn(iOS: {
@@ -54,7 +55,7 @@ public extension CGRect {
   }
 
   /// Returns a CGPoint instance corresponding to the bottom right corner of the rect regardless of the platform.
-  public var bottomRightPoint: CGPoint {
+  var bottomRightPoint: CGPoint {
     get {
       var point = CGPoint.zero
 
